@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{ebd36233-0a50-41a2-af8f-a14d89cd08bf}</ProjectGuid>
+    <RootNamespace>enhancedtl</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>$(SolutionDir)$(Configuration)\intermed\</IntDir>
+    <TargetExt>.auf</TargetExt>
+    <UseStructuredOutput>false</UseStructuredOutput>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>$(SolutionDir)$(Configuration)\intermed\</IntDir>
+    <TargetExt>.auf</TargetExt>
+    <UseStructuredOutput>false</UseStructuredOutput>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;ENHANCEDTL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalIncludeDirectories>sdk/;</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseStandardPreprocessor>true</UseStandardPreprocessor>
+      <UseFullPaths>false</UseFullPaths>
+      <AdditionalOptions>/source-charset:utf-8 /execution-charset:shift_jis %(AdditionalOptions)</AdditionalOptions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <ModuleDefinitionFile>enhanced_tl.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;ENHANCEDTL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalIncludeDirectories>sdk/;</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseStandardPreprocessor>true</UseStandardPreprocessor>
+      <UseFullPaths>false</UseFullPaths>
+      <AdditionalOptions>/source-charset:utf-8 /execution-charset:shift_jis %(AdditionalOptions)</AdditionalOptions>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <OmitFramePointers>true</OmitFramePointers>
+      <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <ModuleDefinitionFile>enhanced_tl.def</ModuleDefinitionFile>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="enhanced_tl.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="bpm_grid.cpp" />
+    <ClCompile Include="context_menu.cpp" />
+    <ClCompile Include="mouse_override\layers.cpp" />
+    <ClCompile Include="mouse_override\mouse_actions.cpp" />
+    <ClCompile Include="enhanced_tl.cpp" />
+    <ClCompile Include="layer_resize.cpp" />
+    <ClCompile Include="mouse_override.cpp" />
+    <ClCompile Include="mouse_override\timeline.cpp" />
+    <ClCompile Include="mouse_override\zoom_gauge.cpp" />
+    <ClCompile Include="script_name.cpp" />
+    <ClCompile Include="timeline.cpp" />
+    <ClCompile Include="tooltip.cpp" />
+    <ClCompile Include="tooltip\layers.cpp" />
+    <ClCompile Include="tooltip\objects.cpp" />
+    <ClCompile Include="tooltip\draggings.cpp" />
+    <ClCompile Include="tooltip\ruler.cpp" />
+    <ClCompile Include="tooltip\scene_button.cpp" />
+    <ClCompile Include="tooltip\tip_contents.cpp" />
+    <ClCompile Include="tooltip\zoom_gauge.cpp" />
+    <ClCompile Include="walkaround.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bpm_grid.hpp" />
+    <ClInclude Include="color_abgr.hpp" />
+    <ClInclude Include="context_menu.hpp" />
+    <ClInclude Include="mouse_override\button_bind.hpp" />
+    <ClInclude Include="mouse_override\layers.hpp" />
+    <ClInclude Include="mouse_override\mouse_actions.hpp" />
+    <ClInclude Include="enhanced_tl.hpp" />
+    <ClInclude Include="inifile_op.hpp" />
+    <ClInclude Include="key_states.hpp" />
+    <ClInclude Include="layer_resize.hpp" />
+    <ClInclude Include="memory_protect.hpp" />
+    <ClInclude Include="modkeys.hpp" />
+    <ClInclude Include="monitors.hpp" />
+    <ClInclude Include="mouse_override.hpp" />
+    <ClInclude Include="mouse_override\timeline.hpp" />
+    <ClInclude Include="mouse_override\zoom_gauge.hpp" />
+    <ClInclude Include="script_name.hpp" />
+    <ClInclude Include="str_encodes.hpp" />
+    <ClInclude Include="timeline.hpp" />
+    <ClInclude Include="tooltip.hpp" />
+    <ClInclude Include="tooltip\layers.hpp" />
+    <ClInclude Include="tooltip\objects.hpp" />
+    <ClInclude Include="tooltip\draggings.hpp" />
+    <ClInclude Include="tooltip\ruler.hpp" />
+    <ClInclude Include="tooltip\scene_button.hpp" />
+    <ClInclude Include="tooltip\tip_contents.hpp" />
+    <ClInclude Include="tooltip\zoom_gauge.hpp" />
+    <ClInclude Include="walkaround.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

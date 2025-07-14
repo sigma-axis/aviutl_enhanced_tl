@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="mouse_override">
+      <UniqueIdentifier>{a3f3b413-e1a8-4907-a589-f2e7aa542bb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tooltip">
+      <UniqueIdentifier>{806d000b-874c-4abd-b9a8-25926c3f5045}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="enhanced_tl.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="enhanced_tl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="timeline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bpm_grid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="layer_resize.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="walkaround.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mouse_override.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mouse_override\timeline.cpp">
+      <Filter>mouse_override</Filter>
+    </ClCompile>
+    <ClCompile Include="mouse_override\mouse_actions.cpp">
+      <Filter>mouse_override</Filter>
+    </ClCompile>
+    <ClCompile Include="mouse_override\layers.cpp">
+      <Filter>mouse_override</Filter>
+    </ClCompile>
+    <ClCompile Include="mouse_override\zoom_gauge.cpp">
+      <Filter>mouse_override</Filter>
+    </ClCompile>
+    <ClCompile Include="tooltip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tooltip\tip_contents.cpp">
+      <Filter>tooltip</Filter>
+    </ClCompile>
+    <ClCompile Include="tooltip\ruler.cpp">
+      <Filter>tooltip</Filter>
+    </ClCompile>
+    <ClCompile Include="tooltip\layers.cpp">
+      <Filter>tooltip</Filter>
+    </ClCompile>
+    <ClCompile Include="tooltip\scene_button.cpp">
+      <Filter>tooltip</Filter>
+    </ClCompile>
+    <ClCompile Include="tooltip\zoom_gauge.cpp">
+      <Filter>tooltip</Filter>
+    </ClCompile>
+    <ClCompile Include="tooltip\objects.cpp">
+      <Filter>tooltip</Filter>
+    </ClCompile>
+    <ClCompile Include="script_name.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="context_menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tooltip\draggings.cpp">
+      <Filter>tooltip</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="enhanced_tl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="modkeys.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="monitors.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="str_encodes.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inifile_op.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="memory_protect.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="timeline.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpm_grid.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="color_abgr.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="layer_resize.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="key_states.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="walkaround.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mouse_override.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mouse_override\timeline.hpp">
+      <Filter>mouse_override</Filter>
+    </ClInclude>
+    <ClInclude Include="mouse_override\mouse_actions.hpp">
+      <Filter>mouse_override</Filter>
+    </ClInclude>
+    <ClInclude Include="mouse_override\layers.hpp">
+      <Filter>mouse_override</Filter>
+    </ClInclude>
+    <ClInclude Include="mouse_override\button_bind.hpp">
+      <Filter>mouse_override</Filter>
+    </ClInclude>
+    <ClInclude Include="mouse_override\zoom_gauge.hpp">
+      <Filter>mouse_override</Filter>
+    </ClInclude>
+    <ClInclude Include="tooltip.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tooltip\tip_contents.hpp">
+      <Filter>tooltip</Filter>
+    </ClInclude>
+    <ClInclude Include="tooltip\ruler.hpp">
+      <Filter>tooltip</Filter>
+    </ClInclude>
+    <ClInclude Include="tooltip\layers.hpp">
+      <Filter>tooltip</Filter>
+    </ClInclude>
+    <ClInclude Include="tooltip\scene_button.hpp">
+      <Filter>tooltip</Filter>
+    </ClInclude>
+    <ClInclude Include="tooltip\zoom_gauge.hpp">
+      <Filter>tooltip</Filter>
+    </ClInclude>
+    <ClInclude Include="tooltip\objects.hpp">
+      <Filter>tooltip</Filter>
+    </ClInclude>
+    <ClInclude Include="script_name.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="context_menu.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tooltip\draggings.hpp">
+      <Filter>tooltip</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
