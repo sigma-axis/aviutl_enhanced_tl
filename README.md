@@ -12,7 +12,7 @@
 
 1.  **タイムライン移動コマンド関連**
 
-    TODO: video or GIF
+    https://github.com/user-attachments/assets/c3bd1051-cdf0-4e8d-a289-d3d24012c986
 
     ショートカットキー操作でオブジェクト境界への現在フレーム移動 (編集点への移動) や，タイムラインのスクロール，BPMグリッドへの移動などができます．
 
@@ -22,7 +22,7 @@
 
 1.  **タイムライン右クリックメニューの追加機能**
 
-    TODO: image
+    ![追加コンテキストメニュー](https://github.com/user-attachments/assets/04cb10e6-027f-480f-a513-e34cc6b9a559)
 
     タイムラインの右クリックメニューに一部機能を追加しています．
 
@@ -30,7 +30,7 @@
 
 1.  **ツールチップ**
 
-    TODO: image
+    https://github.com/user-attachments/assets/3909f530-48c3-4b6c-9bee-4eba4befaa79
 
     タイムラインの各所にツールチップを表示するようになります．
 
@@ -38,7 +38,7 @@
 
 1.  **マウス操作のカスタマイズ機能**
 
-    TODO: video or GIF
+    https://github.com/user-attachments/assets/7e425680-bf04-4cf8-b800-6288c83ec505
 
     タイムラインに対するマウス入力を置き換え，新しいマウス操作も追加します．
 
@@ -50,7 +50,7 @@
 
 1.  **レイヤー幅を自由に調整する機能**
 
-    TODO: video or GIF
+    https://github.com/user-attachments/assets/c9e1a77a-27dc-445a-8b6f-a2d1c83f38ab
 
     タイムラインのレイヤー幅を，既存の **大・中・小** よりも細かく調整できるようになります．
 
