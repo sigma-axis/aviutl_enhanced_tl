@@ -16,7 +16,7 @@
 
     ショートカットキー操作でオブジェクト境界への現在フレーム移動 (編集点への移動) や，タイムラインのスクロール，BPMグリッドへの移動などができます．
 
-    [[詳細はこちら](タイムライン移動コマンドの機能)]
+    [[詳細はこちら](https://github.com/sigma-axis/aviutl_enhanced_tl/wiki/タイムライン移動コマンドの機能)]
 
     - [TLショトカ移動](https://github.com/sigma-axis/aviutl_tl_walkaround) の機能移植です．
 
@@ -26,7 +26,7 @@
 
     タイムラインの右クリックメニューに一部機能を追加しています．
 
-    [[詳細はこちら](タイムライン右クリックメニューの追加機能)]
+    [[詳細はこちら](https://github.com/sigma-axis/aviutl_enhanced_tl/wiki/タイムライン右クリックメニューの追加機能)]
 
 1.  **ツールチップ**
 
@@ -34,7 +34,7 @@
 
     タイムラインの各所にツールチップを表示するようになります．
 
-    [[詳細はこちら](ツールチップ機能)]
+    [[詳細はこちら](https://github.com/sigma-axis/aviutl_enhanced_tl/wiki/ツールチップ機能)]
 
 1.  **マウス操作のカスタマイズ機能**
 
@@ -44,7 +44,7 @@
 
     各種マウスボタンやホイールと Ctrl / Shift / Alt キーとの組み合わせで，マウス操作を自由に割り当てられます．
 
-    [[詳細はこちら](マウス操作のカスタマイズ機能)]
+    [[詳細はこちら](https://github.com/sigma-axis/aviutl_enhanced_tl/wiki/マウス操作のカスタマイズ機能)]
 
     - [TLショトカ移動](https://github.com/sigma-axis/aviutl_tl_walkaround)，[可変幅レイヤー](https://github.com/sigma-axis/aviutl_layer_resize)，[レイヤー一括切り替え](https://github.com/sigma-axis/aviutl_toggle_layers)，[Layer Wheel 2](https://github.com/sigma-axis/aviutl_layer_wheel2) の一部機能を移植・統合・拡張したものです．
 
@@ -56,7 +56,7 @@
 
     ウィンドウのドラッグ操作で調整したり，メニューコマンドに割り当てたショートカットキーで調節したりできます．
 
-    [[詳細はこちら](レイヤー幅を自由に調整する機能)]
+    [[詳細はこちら](https://github.com/sigma-axis/aviutl_enhanced_tl/wiki/レイヤー幅を自由に調整する機能)]
 
     - [可変幅レイヤー](https://github.com/sigma-axis/aviutl_layer_resize) の機能移植です．
 
