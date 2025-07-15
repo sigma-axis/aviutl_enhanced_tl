@@ -2,7 +2,7 @@
 
 拡張編集のタイムラインに対する操作を自由にカスタマイズできるプラグインです．
 
-[ダウンロードはこちら．](https://github.com/sigma-axis/aviutl_enhanced_tl/releases) (紹介動画準備中．)
+[ダウンロードはこちら．](https://github.com/sigma-axis/aviutl_enhanced_tl/releases) [紹介動画．](https://www.nicovideo.jp/watch/sm45190275)
 
 
 ## 機能紹介
