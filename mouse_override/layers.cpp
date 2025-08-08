@@ -99,7 +99,7 @@ static constinit class ScrollTimer {
 
 public:
 	/// @brief whether the auto-scrolls should be performed.
-	operator bool() const { return get_tick() >= next_scroll_tick; }
+	operator bool() const { return get_tick() - next_scroll_tick >= 0; }
 	/// @brief whether the auto-scrolls should be suspended.
 	bool operator!() const { return !operator bool(); }
 	void set(drag_state* caller)
@@ -114,6 +114,7 @@ public:
 	void kill()
 	{
 		if (callback != nullptr) kill_internal();
+		next_scroll_tick = get_tick();
 	}
 } scroll_timer{};
 
@@ -228,7 +229,7 @@ bool expt::drags::detail::flag_drag::on_mouse_down_core(modkeys mkeys)
 	// modify the first flag.
 	f ^= flag();
 
-	scroll_timer.kill(); // may not be necessary.
+	scroll_timer.kill(); // reset the timer.
 	::SetCapture(exedit.fp->hwnd);
 
 	// redraw the entire timeline.
@@ -318,7 +319,7 @@ bool expt::drags::Select_All::on_mouse_down_core(modkeys mkeys)
 		::InvalidateRect(exedit.fp->hwnd, nullptr, FALSE);
 	}
 
-	scroll_timer.kill(); // may not be necessary.
+	scroll_timer.kill(); // reset the timer.
 	::SetCapture(exedit.fp->hwnd);
 	return false;
 }
@@ -386,7 +387,7 @@ bool expt::drags::Drag_Move::on_mouse_down_core(modkeys mkeys)
 
 	// nothing to do here at mouse down.
 
-	scroll_timer.kill(); // may not be necessary.
+	scroll_timer.kill(); // reset the timer.
 	::SetCapture(exedit.fp->hwnd);
 	::SetCursor(::LoadCursorW(nullptr, reinterpret_cast<wchar_t const*>(IDC_SIZENS)));
 	return false;
